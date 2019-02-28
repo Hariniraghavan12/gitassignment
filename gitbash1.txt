@@ -1,0 +1,71 @@
+
+h.a.vijayaraghavan@CDC2D-D-1B7P882 MINGW64 ~/Desktop
+$ git clone https://github.com/Hariniraghavan12/Practice_Codes.git
+fatal: destination path 'Practice_Codes' already exists and is not an empty directory.
+
+h.a.vijayaraghavan@CDC2D-D-1B7P882 MINGW64 ~/Desktop
+$ cd Practice_Codes
+
+h.a.vijayaraghavan@CDC2D-D-1B7P882 MINGW64 ~/Desktop/Practice_Codes (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        newwww.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+h.a.vijayaraghavan@CDC2D-D-1B7P882 MINGW64 ~/Desktop/Practice_Codes (master)
+$ git add newwww.txt
+
+h.a.vijayaraghavan@CDC2D-D-1B7P882 MINGW64 ~/Desktop/Practice_Codes (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   newwww.txt
+
+
+h.a.vijayaraghavan@CDC2D-D-1B7P882 MINGW64 ~/Desktop/Practice_Codes (master)
+$ git commit -m'newwwww is added to the repo'
+[master 8b8a273] newwwww is added to the repo
+ Committer: Vijayaraghavan <h.a.vijayaraghavan@accenture.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 newwww.txt
+
+h.a.vijayaraghavan@CDC2D-D-1B7P882 MINGW64 ~/Desktop/Practice_Codes (master)
+$ git pull
+Already up to date.
+
+h.a.vijayaraghavan@CDC2D-D-1B7P882 MINGW64 ~/Desktop/Practice_Codes (master)
+$ git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 252 bytes | 36.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Hariniraghavan12/Practice_Codes.git
+   91f1bb9..8b8a273  master -> master
+
+h.a.vijayaraghavan@CDC2D-D-1B7P882 MINGW64 ~/Desktop/Practice_Codes (master)
+$
