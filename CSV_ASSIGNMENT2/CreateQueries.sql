@@ -1,0 +1,5 @@
+create table if not exists Employee(Emp_Id varchar(7) not null,First_Name varchar(50) not null,Last_Name varchar(50) not null,Gender varchar(2) not null,email varchar(60)  not null,DOB date not null,Phone int(10),DOJ date not null,Experience int not null );
+create table if not exists Project1(Project_Id varchar(7),Project_Name varchar(40));
+create table if not exists Supervisor(Supervisor_Id varchar(7) references Employee(Emp_Id),Supervisor_Name varchar(40));
+create table if not exists Salary(Salary_Id varchar(7),Salary int,Hike decimal(5,2));
+create table if not exists Employee_Project(Emp_Id varchar(7) references Employee(Emp_Id),Project_Id varchar(7) references Project(Project_Id),Supervisor_Id varchar(7) references Supervisor(Supervisor_Id),Salary_Id varchar(7) references Salary(Salary_Id),Rollon_date date not null,Rolloff_date date not null,Career_level int not null,Work_location varchar(40),Designation varchar(40),FiscalYear varchar(10),flag varchar(2) default 'N');

@@ -1,0 +1,15 @@
+Employee who is having highest salary in each department
+how many months he's at each level of of each employee
+list of employees who is never an ASE(LATERAL)
+
+
+
+select e.Project_Id,max(s.Salary) from Salary s join Employee_Project e on s.Salary_Id=e.Salary_Id group by e.Project_Id;
+Project_Id|max(s.Salary)
+P001|80000
+P002|86000
+P003|90000
+P004|89000
+P005|87000
+P006|90000
+P010|200000
